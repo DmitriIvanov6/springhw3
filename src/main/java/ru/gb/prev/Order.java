@@ -8,19 +8,22 @@ public class Order {
     private LocalDate date;
     private float cost;
     private List<Product> products;
+    private String productsFromForm;
+    private String productsList;
+
 
     public Order() {
 
     }
 
-    public Order(int id, LocalDate date, float cost, List<Product> products) {
+    public Order(int id, LocalDate date, float cost, List<Product> products, String productsFromForm) {
         this.id = id;
         this.date = date;
         this.cost = cost;
         this.products = products;
+        this.productsFromForm = productsFromForm;
+
     }
-
-
 
 
     public int getId() {
@@ -34,6 +37,8 @@ public class Order {
     public float getCost() {
         return cost;
     }
+
+
 
     public List<Product> getProducts() {
         return products;
@@ -56,7 +61,6 @@ public class Order {
     }
 
 
-
     @Override
     public String toString() {
         return "Order{" +
@@ -65,6 +69,22 @@ public class Order {
                 ", cost=" + cost +
                 ", products=" + products +
                 '}';
+    }
+
+    public String getProductsFromForm() {
+        return productsFromForm;
+    }
+
+    public void setProductsFromForm(String productsFromForm) {
+        this.productsFromForm = productsFromForm;
+    }
+
+    public String getProductsList() {
+        return productsList;
+    }
+
+    public void setProductsList(String productsList) {
+        this.productsList = productsList;
     }
 }
 

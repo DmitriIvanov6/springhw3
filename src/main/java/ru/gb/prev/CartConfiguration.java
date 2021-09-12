@@ -17,8 +17,8 @@ public class CartConfiguration {
     }
 
     @Bean
-    public OrderRepository orderRepository(){
-        return new OrderRepository();
+    public OrderRepository orderRepository(ProductRepository productRepository) {
+        return new OrderRepository(productRepository);
     }
 
 }

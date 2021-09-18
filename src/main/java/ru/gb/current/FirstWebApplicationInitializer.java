@@ -6,17 +6,17 @@ public class FirstWebApplicationInitializer extends AbstractAnnotationConfigDisp
 
     @Override
     protected String[] getServletMappings() {
-        return new String[] {"/"};
+        return new String[]{"/"};
     }
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[] {RootWebApplicationConfig.class};
+        return new Class[]{RootWebApplicationConfig.class};
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[] {WebMvcApplicationConfig.class};
+        return new Class[]{WebMvcApplicationConfig.class};
     }
 
 }

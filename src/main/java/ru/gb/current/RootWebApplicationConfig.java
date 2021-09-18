@@ -6,6 +6,6 @@ import ru.gb.prev.CartConfiguration;
 
 @Configuration
 @Import(CartConfiguration.class)
-public class RootWebApplicationConfig{
+public class RootWebApplicationConfig {
 
 }
